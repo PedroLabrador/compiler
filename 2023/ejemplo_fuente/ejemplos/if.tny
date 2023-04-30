@@ -1,0 +1,6 @@
+read y;
+if y < 5 then
+	write 1
+else 
+	write 0
+end

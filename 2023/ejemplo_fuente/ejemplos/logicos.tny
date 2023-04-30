@@ -1,0 +1,29 @@
+int y;
+int z;
+
+read y;
+z:=1;
+
+if y and z then
+	write 1;
+else 
+	write 2;
+end;
+
+int x;
+read x;
+
+if x >= 10 then
+	write 3;
+else
+	write 4;
+end;
+
+int a;
+a:=0;
+
+if z or a then
+    write 5;
+else
+    write 6;
+end

@@ -1,0 +1,19 @@
+int vector[5];
+
+vector[0]:=3;
+vector[1]:=7;
+vector[2]:=1;
+vector[3]:=4;
+vector[4]:=0;
+
+int i:=0;
+int max:=0;
+
+repeat
+ 	if max < vector[i] then
+ 		max:= vector[i] 	
+ 	end;
+	i:=i+1
+until i = 4;
+
+write max;

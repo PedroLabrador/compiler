@@ -1,0 +1,33 @@
+LDC 1
+MEM x
+LDC 1
+MEM fact
+LDA x
+RDI 
+STO
+LDC 0
+LOD x
+LST
+FJP L1
+LDA fact
+LDC 1
+STO
+LAB L2
+LDA fact
+LOD fact
+LOD x
+MPI
+STO
+LDA x
+LOD x
+LDC 1
+SBI
+STO
+LOD x
+LDC 0
+EQU
+FJP L2
+LOD fact
+WRI
+LAB L1
+STP

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="src/especificacion/java-cup-11b-runtime.jar"/>
+	<classpathentry kind="lib" path="src/especificacion/jflex-full-1.8.2.jar"/>
+	<classpathentry kind="output" path="out/production/Compiladores_Lexico_2022_1"/>
+</classpath>

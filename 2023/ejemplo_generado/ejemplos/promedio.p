@@ -1,0 +1,73 @@
+LDC 12
+MEM x
+LDA x
+LDC 0
+ADI
+LDC 5
+STO
+LDA x
+LDC 1
+ADI
+LDC 4
+STO
+LDA x
+LDC 2
+ADI
+LDC 3
+STO
+LDA x
+LDC 3
+ADI
+LDC 2
+STO
+LDA x
+LDC 4
+ADI
+LDC 1
+STO
+LDC 1
+MEM sum
+LDA sum
+LDC 0
+STO
+LDC 1
+MEM i
+LDA i
+LDC 0
+STO
+LDC 1
+MEM length
+LDA length
+LDC 5
+STO
+LDC 1
+MEM average
+LDA average
+LDC 0
+STO
+LAB L0
+LDA sum
+LOD sum
+LDA x
+LOD i
+ADI
+LDM
+ADI
+STO
+LDA i
+LOD i
+LDC 1
+ADI
+STO
+LOD i
+LOD length
+GRT
+FJP L0
+LDA average
+LOD sum
+LOD length
+DIV
+STO
+LOD average
+WRI
+STP

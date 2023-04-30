@@ -1,0 +1,25 @@
+read x;
+{mayor de edad o no}
+if (x mod 2) = 0 then
+	write 1
+ else
+ 	write 0
+end
+
+{codigos de prueba}
+
+{int i;
+bool j;
+
+i := 5;
+j := 1;
+
+write i;
+write j;}
+
+{int i;
+
+for i:=0,i<10,i:=i+1 do
+	write i
+end
+}

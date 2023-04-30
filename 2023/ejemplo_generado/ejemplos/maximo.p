@@ -1,0 +1,65 @@
+
+LDC 5
+MEM vector
+LDA vector
+LDC 0
+ADI
+LDC 3
+STO
+LDA vector
+LDC 1
+ADI
+LDC 7
+STO
+LDA vector
+LDC 2
+ADI
+LDC 1
+STO
+LDA vector
+LDC 3
+ADI
+LDC 4
+STO
+LDA vector
+LDC 4
+ADI
+LDC 0
+STO
+LDC 1
+MEM i
+LDA i
+LDC 0
+STO
+LDC 1
+MEM max
+LDA max
+LDC 0
+STO
+LAB L0
+LOD max
+LDA vector
+LOD i
+ADI
+LDM
+LST
+FJP L2
+LDA max
+LDA vector
+LOD i
+ADI
+LDM
+STO
+LAB L2
+LDA i
+LOD i
+LDC 1
+ADI
+STO
+LOD i
+LDC 4
+EQU
+FJP L0
+LOD max
+WRI
+STP

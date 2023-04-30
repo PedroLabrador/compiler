@@ -1,0 +1,11 @@
+{ Sample program
+  in TINY language -
+  computes factorial
+}
+int x;
+int y;
+int z;
+read x;
+read y;
+z:=x+y;
+write z
